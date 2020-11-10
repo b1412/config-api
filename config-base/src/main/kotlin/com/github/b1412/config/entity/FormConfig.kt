@@ -14,7 +14,9 @@ import javax.validation.constraints.NotNull
 @DynamicInsert
 data class FormConfig(
         @NotNull
-        val entity: String?,
+        val name: String?,
+        @NotNull
+        val pageId: String?,
         @NotNull
         @Column(columnDefinition = "TEXT")
         val json: String?
