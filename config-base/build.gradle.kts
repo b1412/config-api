@@ -14,7 +14,7 @@ plugins {
 }
 
 group = "com.github.b1412"
-version = "0.1.1"
+version = "0.1.2"
 
 val jar: Jar by tasks
 val bootJar: BootJar by tasks
@@ -106,7 +106,7 @@ tasks.withType<Test> {
 publishing {
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/b1412/email-api")
+            url = uri("https://maven.pkg.github.com/b1412/config-api")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")

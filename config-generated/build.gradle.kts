@@ -27,7 +27,7 @@ allOpen {
 }
 
 group = "com.github.b1412"
-version = "0.1.1"
+version = "0.1.2"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 
@@ -95,7 +95,7 @@ tasks.withType<Test> {
 publishing {
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/b1412/email-api")
+            url = uri("https://maven.pkg.github.com/b1412/config-api")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
