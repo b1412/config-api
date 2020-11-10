@@ -1,4 +1,4 @@
-name: Email API CI
+name: Config API CI
 
 on:
   push:
