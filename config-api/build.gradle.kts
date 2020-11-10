@@ -120,7 +120,7 @@ tasks.withType<Test> {
 publishing {
     repositories {
         maven {
-            url = uri("https://maven.pkg.github.com/b1412/email-api")
+            url = uri("https://maven.pkg.github.com/b1412/config-api")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
