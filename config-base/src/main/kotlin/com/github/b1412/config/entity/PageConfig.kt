@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull
 @Entity
 @DynamicUpdate
 @DynamicInsert
-data class FormConfig(
+data class PageConfig(
         @NotNull
         val name: String?,
         @NotNull

@@ -1,6 +1,6 @@
 package com.github.b1412.config.excel
 
-import com.github.b1412.config.entity.FormConfig
+import com.github.b1412.config.entity.PageConfig
 import com.github.b1412.excel.service.ExcelParsingRule
 import com.github.b1412.files.parser.FileParser
 import com.github.b1412.excel.convertor.*
@@ -10,11 +10,11 @@ import javax.persistence.EntityManager
 
 
 @Component
-class FormConfigExcelParsingRule(
+class PageConfigExcelParsingRule(
         @Autowired
         val entityManager: EntityManager
 
-) : ExcelParsingRule<FormConfig> {
+) : ExcelParsingRule<PageConfig> {
 
     override val fileParser: FileParser
     get() {
@@ -40,12 +40,12 @@ class FormConfigExcelParsingRule(
     }
 
     override val entityClass: Class<*>
-    get() = FormConfig::class.java
+    get() = PageConfig::class.java
 
     override val ruleName: String
-    get() = "formConfig"
+    get() = "pageConfig"
 
-    override fun process(data: List<FormConfig>) {
+    override fun process(data: List<PageConfig>) {
         data.forEach{
             entityManager.persist(it)
         }
