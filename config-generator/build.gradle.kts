@@ -15,7 +15,7 @@ val bootJar: BootJar by tasks
 bootJar.enabled = false
 jar.enabled = true
 
-version = "0.1.5"
+version = "0.1.6"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
@@ -34,7 +34,7 @@ repositories {
 dependencies {
     implementation(project(":config-base"))
     implementation("com.github.b1412:api-common:5ba35feadd")
-    implementation("com.github.b1412:permission-base:0.1.15")
+    implementation("com.github.b1412:permission-base:0.1.16")
 
     implementation("com.github.b1412:generator-tasks:11e23d1673")
     implementation("com.github.b1412:kotlin-code-generator:790498a17d")
@@ -47,7 +47,7 @@ dependencies {
     implementation("io.arrow-kt:arrow-core:$arrowVersion")
     implementation("io.arrow-kt:arrow-syntax:$arrowVersion")
     implementation("com.google.guava:guava:30.0-jre")
-    implementation("mysql:mysql-connector-java:6.0.5")
+    implementation("mysql:mysql-connector-java:8.0.22")
 }
 
 tasks.withType<KotlinCompile> {

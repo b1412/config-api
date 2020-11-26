@@ -38,7 +38,7 @@ repositories {
 
 dependencies {
     api(project(":config-api"))
-    implementation("com.github.b1412:permission-api:0.1.15")
+    implementation("com.github.b1412:permission-api:0.1.16")
     implementation("com.github.b1412:api-common:5ba35feadd")
 
     val arrowVersion = "0.11.0"
@@ -47,7 +47,7 @@ dependencies {
     springboot()
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-hibernate5")
-    implementation("mysql:mysql-connector-java:6.0.5")
+    implementation("mysql:mysql-connector-java:8.0.22")
     arrow(arrowVersion)
     graphql()
     implementation("org.jooq:joor-java-8:0.9.12")
